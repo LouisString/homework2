@@ -132,7 +132,7 @@
 **_PS_**：
 
 文中`Pull Request`的介绍用的是`Bitbucket`代码托管服务，由于和`GitHub`基本一样，如果你用的是`GitHub`（我自己也主要使用`GitHub`托管代码），不影响理解和操作。
-
+S
 **_PPS_**：
 
 更多`Git`学习资料参见
