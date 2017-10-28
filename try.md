@@ -74,6 +74,51 @@ With workflow's help, when writing chapter content, or composing sections, every
  ![](https://github.com/LouisString/homework2/blob/master/pic5.png?raw=true)
 
 &ensp;&ensp;&ensp;Before the developer can publish their feature, they need to fetch the updated central commits and rebase their changes on top of them! Git makes it very easy for new developers to manage their own merges, or to abort the entire rebase and try again.
+
+&ensp;&ensp;&ensp;Remember:
+
+>* There is no one-size-fits-all Git workflow
+>* A workflow should be simple and enhance the productivity of your team
+>* Your business requirements should help shape your Git workflow
+
+
+&ensp;&ensp;&ensp;Here is one detailed process for examble:
+
+**John works on his feature**
+
+![](https://github.com/LouisString/homework2/blob/master/pic19.png?raw=true)
+
+**Marry works on his feature**
+
+![](https://github.com/LouisString/homework2/blob/master/pic20.png?raw=true)
+
+**John publishes his feature successfully**
+
+![](https://github.com/LouisString/homework2/blob/master/pic21.png?raw=true)
+
+**Mary tries to publish her feature but her local history has diverged from the central repository**
+
+![](https://github.com/LouisString/homework2/blob/master/pic22.png?raw=true)
+
+**Mary rebases on top of John’s commit(s)**
+
+![](https://github.com/LouisString/homework2/blob/master/pic23.png?raw=true)
+
+**synchronise upstream commit history with Marry's local commits**
+
+![](https://github.com/LouisString/homework2/blob/master/pic24.png?raw=true)
+
+**Mary resolves a merge conflict**
+
+![](https://github.com/LouisString/homework2/blob/master/pic25.png?raw=true)
+
+
+![](https://github.com/LouisString/homework2/blob/master/pic26.png?raw=true)
+
+**Mary successfully publishes her feature!**
+
+![](https://github.com/LouisString/homework2/blob/master/pic27.png?raw=true)
+
 <br/><br/><br/><br/>
 <font face = "AR ESSENCE" size = 4 >
 
@@ -86,13 +131,18 @@ With workflow's help, when writing chapter content, or composing sections, every
 
 &ensp;&ensp;&ensp;It has following advantages:
 
->* lets developers work on a particular feature without disturbing the main codebase. `master` branch will never contain broken code.
- >* storing and sharing several feature branches on the central repository 
- >* leverage pull requests, which are a way to initiate discussions around a branch. 
+
+ >* focused on branching patterns
+>* can be leveraged by other repo oriented workflows
+> * promotes collaboration with team members through pull requests and merge reviews
 
 &ensp;&ensp;&ensp;Once someone completes a feature, they don’t immediately merge it into master. Instead, they push the feature branch to the central server and file a pull request asking to merge their additions into master.
 
 &ensp;&ensp;&ensp;This gives other developers an opportunity to review the changes before they become a part of the main codebase.
+
+&ensp;&ensp;&ensp;Here are several pictures in order to show procedures above:
+
+
 
 <font face = "Bradley Hand ITC" size = 3 >
 
@@ -109,6 +159,34 @@ With workflow's help, when writing chapter content, or composing sections, every
 
 &ensp;&ensp;&ensp;Once a pull request is accepted, the actual act of publishing a feature is much the same as in the Centralized Workflow!
 
+&ensp;&ensp;&ensp;Also, let's see an example:
+
+**Mary begins a new feature**
+
+![](https://github.com/LouisString/homework2/blob/master/pic13.png?raw=true)
+
+**Mary push her feature branch up to the central repository and goes to lunch**
+
+![](https://github.com/LouisString/homework2/blob/master/pic14.png?raw=true)
+
+**Mary finishes her feature**
+
+![](https://github.com/LouisString/homework2/blob/master/pic15.png?raw=true)
+
+**Bill receives the pull request**
+
+![](https://github.com/LouisString/homework2/blob/master/pic16.png?raw=true)
+
+**Mary makes the changes, and Bill could pull marys-feature into his local repository**
+
+![](https://github.com/LouisString/homework2/blob/master/pic17.png?raw=true)
+
+**Mary publishes her feature**
+
+![](https://github.com/LouisString/homework2/blob/master/pic18.png?raw=true)
+
+
+
 <br/><br/><br/><br/>
 <font face = "AR ESSENCE" size = 4 >
 
@@ -118,6 +196,8 @@ With workflow's help, when writing chapter content, or composing sections, every
 &ensp;&ensp;&ensp;Gitflow Workflow defines a strict branching model designed around the project release. This provides a robust framework for managing larger projects.  
 
 &ensp;&ensp;&ensp;Gitflow is just an abstract idea of a Git workflow. However, it is **ideally suited for projects that have a scheduled release cycle.** This workflow doesn’t add any new concepts or commands beyond what’s required for the Feature Branch Workflow. Instead, it assigns very specific roles to different branches and defines how and when they should interact! 
+
+
 
 &ensp;&ensp;&ensp;Compared to Feature Branch Workflow we talked above:
 >* it uses individual branches for preparing, maintaining, and recording releases.
@@ -155,6 +235,14 @@ Instead of branching off of master, feature branches use develop as their parent
 
 &ensp;&ensp;&ensp;Using a dedicated branch to prepare releases makes it possible for one team to polish the current release while another team continues working on features for the next release. It also creates well-defined phases of development. 
 
+&ensp;&ensp;&ensp;So, we see the overall flow of Gitflow is:
+>* A develop branch is created from master
+>* A release branch is created from develop
+>* Feature branches are created from develop
+>* When a feature is complete it is merged into the release branch
+>* When the release branch is done it is merged into develop and master
+>* If an issue in master is detected a hotfix branch is created from master
+>* Once the hotfix is complete it is merged to both develop and master
   
 <br/><br/><br/><br/>
 <font face = "AR ESSENCE" size = 4 >
@@ -195,5 +283,7 @@ Instead of branching off of master, feature branches use develop as their parent
 &ensp;&ensp;&ensp;To integrate the feature into the official codebase, the maintainer pulls the contributor’s changes into their local repository, merges it into his local master branch, then pushes the master branch to the official repository on the server.
 
 &ensp;&ensp;&ensp;The contribution is now part of the project, and other developers should pull from the official repository to synchronize their local repositories.
+
+![](https://github.com/LouisString/homework2/blob/master/pic12.png?raw=true)
 
 </font>
