@@ -6,7 +6,7 @@
 
 
 
-<font face = "Agency FB" size = 4 >
+<font face = "Agency FB" size = 5 >
 
 ### What's a Git workflow
 </font>
@@ -28,7 +28,7 @@ With workflow's help, when writing chapter content, or composing sections, every
 ![](https://github.com/LouisString/homework2/blob/master/pic2.jpg?raw=true)
 
 
-<font face = "Agency FB" size = 4 >
+<font face = "Agency FB" size = 5 >
 
 ### Types of Git workflow
 </font>
@@ -37,7 +37,7 @@ With workflow's help, when writing chapter content, or composing sections, every
 
 
 <br/><br/>
-<font face = "AR ESSENCE" size = 4 >
+<font face = "AR ESSENCE" size = 5 >
 
  Centralized Workflow
 </font>
@@ -55,7 +55,7 @@ With workflow's help, when writing chapter content, or composing sections, every
 
 &ensp;&ensp;&ensp;So a Centralized Workflow is generally better suited for teams **migrating from SVN to Git and smaller size teams!**
 
-<font face = "Bradley Hand ITC" size = 3 >
+<font face = "Bradley Hand ITC" size = 4 >
 
 ### How to use it?
 </font>
@@ -84,43 +84,43 @@ With workflow's help, when writing chapter content, or composing sections, every
 
 &ensp;&ensp;&ensp;Here is one detailed process for examble:
 
-**John works on his feature**
+>**John works on his feature**
 
 ![](https://github.com/LouisString/homework2/blob/master/pic19.png?raw=true)
 
-**Marry works on his feature**
+>**Marry works on his feature**
 
 ![](https://github.com/LouisString/homework2/blob/master/pic20.png?raw=true)
 
-**John publishes his feature successfully**
+>**John publishes his feature successfully**
 
 ![](https://github.com/LouisString/homework2/blob/master/pic21.png?raw=true)
 
-**Mary tries to publish her feature but her local history has diverged from the central repository**
+>**Mary tries to publish her feature but her local history has diverged from the central repository**
 
 ![](https://github.com/LouisString/homework2/blob/master/pic22.png?raw=true)
 
-**Mary rebases on top of John’s commit(s)**
+>**Mary rebases on top of John’s commit(s)**
 
 ![](https://github.com/LouisString/homework2/blob/master/pic23.png?raw=true)
 
-**synchronise upstream commit history with Marry's local commits**
+>**synchronise upstream commit history with Marry's local commits**
 
 ![](https://github.com/LouisString/homework2/blob/master/pic24.png?raw=true)
 
-**Mary resolves a merge conflict**
+>**Mary resolves a merge conflict**
 
 ![](https://github.com/LouisString/homework2/blob/master/pic25.png?raw=true)
 
 
 ![](https://github.com/LouisString/homework2/blob/master/pic26.png?raw=true)
 
-**Mary successfully publishes her feature!**
+>**Mary successfully publishes her feature!**
 
 ![](https://github.com/LouisString/homework2/blob/master/pic27.png?raw=true)
 
 <br/><br/><br/><br/>
-<font face = "AR ESSENCE" size = 4 >
+<font face = "AR ESSENCE" size = 5 >
 
  Feature Branch Workflow
 </font>
@@ -144,7 +144,7 @@ With workflow's help, when writing chapter content, or composing sections, every
 
 
 
-<font face = "Bradley Hand ITC" size = 3 >
+<font face = "Bradley Hand ITC" size = 4 >
 
 ### How to use it?
 </font>
@@ -161,34 +161,34 @@ With workflow's help, when writing chapter content, or composing sections, every
 
 &ensp;&ensp;&ensp;Also, let's see an example:
 
-**Mary begins a new feature**
+>**Mary begins a new feature**
 
 ![](https://github.com/LouisString/homework2/blob/master/pic13.png?raw=true)
 
-**Mary push her feature branch up to the central repository and goes to lunch**
+>**Mary push her feature branch up to the central repository and goes to lunch**
 
 ![](https://github.com/LouisString/homework2/blob/master/pic14.png?raw=true)
 
-**Mary finishes her feature**
+>**Mary finishes her feature**
 
 ![](https://github.com/LouisString/homework2/blob/master/pic15.png?raw=true)
 
-**Bill receives the pull request**
+>**Bill receives the pull request**
 
 ![](https://github.com/LouisString/homework2/blob/master/pic16.png?raw=true)
 
-**Mary makes the changes, and Bill could pull marys-feature into his local repository**
+>**Mary makes the changes, and Bill could pull marys-feature into his local repository**
 
 ![](https://github.com/LouisString/homework2/blob/master/pic17.png?raw=true)
 
-**Mary publishes her feature**
+>**Mary publishes her feature**
 
 ![](https://github.com/LouisString/homework2/blob/master/pic18.png?raw=true)
 
 
 
 <br/><br/><br/><br/>
-<font face = "AR ESSENCE" size = 4 >
+<font face = "AR ESSENCE" size = 5 >
 
  Gitflow Workflow
 </font>
@@ -206,7 +206,7 @@ With workflow's help, when writing chapter content, or composing sections, every
 >* it has 2 main branches: The `master` branch stores the official release history, and the `develop` branch serves as an integration branch for features.
 
 
-<font face = "Bradley Hand ITC" size = 3 >
+<font face = "Bradley Hand ITC" size = 4 >
 
 ### How it works?
 </font>
@@ -245,7 +245,7 @@ Instead of branching off of master, feature branches use develop as their parent
 >* Once the hotfix is complete it is merged to both develop and master
   
 <br/><br/><br/><br/>
-<font face = "AR ESSENCE" size = 4 >
+<font face = "AR ESSENCE" size = 5 >
 
  Forking Workflow
 </font>
@@ -257,7 +257,7 @@ Instead of branching off of master, feature branches use develop as their parent
 &ensp;&ensp;&ensp;Thus, the Forking Workflow typically follows a branching model based on the Gitflow Workflow. It is an **ideal workflow for open source projects**.
 
 
-<font face = "Bradley Hand ITC" size = 3 >
+<font face = "Bradley Hand ITC" size = 4 >
 
 ### How it works?
 </font>
@@ -284,6 +284,19 @@ Instead of branching off of master, feature branches use develop as their parent
 
 &ensp;&ensp;&ensp;The contribution is now part of the project, and other developers should pull from the official repository to synchronize their local repositories.
 
+&ensp;&ensp;&ensp;Here is a family picture:
 ![](https://github.com/LouisString/homework2/blob/master/pic12.png?raw=true)
+
+&ensp;&ensp;&ensp;A high-level example of a Forking Workflow is:
+ 
+>* You want to contribute to an open source library hosted at bitbucket.org/userA/open-project
+>* Using Bitbucket you create a fork of the repo to bitbucket.org/YourName/open-project
+>* On your local system you execute git clone on https://bitbucket.org/YourName/open-project to get a local copy of the repo
+>* You create a new feature branch in your local repo
+>* Work is done to complete the new feature and git commit is executed to save the changes
+>* You then push the new feature branch to your remote forked repo
+>* Using Bitbucket you open up a pull request for the new branch against the original repo at bitbucket.org/userA/open-project
+
+&ensp;&ensp;&ensp;Thanks for reading!
 
 </font>
